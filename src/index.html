@@ -10,125 +10,141 @@
 </head>
 
 <body class="m-3 sm:m-10">
-    <main class="relative">
-          <header class="flex flex-row justify-between p-3 mb-2 sm:my-6">
-        <div class="w-[12%]">
-            <img src="images/logo.svg" alt="logo">
-        </div>
-        <nav>
-            <ul class="sm:flex flex-row gap-4 hidden text-gray-800">
-            <li><a class="hover:text-red-500 transition-colors duration-150" href="#">Home</a></li>
-            <li><a class="hover:text-red-500 transition-colors duration-150" href="#">News</a></li>
-            <li><a class="hover:text-red-500 transition-colors duration-150" href="#">Popular</a></li>
-            <li><a class="hover:text-red-500 transition-colors duration-150" href="#">Trending</a></li>
-            <li><a class="hover:text-red-500 transition-colors duration-150" href="#">Categories</a></li>
-            </ul>
-            <div class="sm:hidden">
-                <img id="menu-button" src="images/icon-menu.svg" alt="menu">
+    <main class="relative 2xl:max-w-[1300px] mx-auto">
+        <header class="flex flex-row justify-between p-3 mb-2 sm:my-6">
+            <div class="w-[12%]">
+                <img src="images/logo.svg" alt="logo">
             </div>
-
-            <div id="menu" class="bg-white absolute right-0 top-0 hidden h-full w-72">
-                <div class="flex flex-row justify-end p-4">
-                    <img class="mb-20" id="close-button" src="images/icon-menu-close.svg" alt="close">
-                </div>
-                <ul class="text-gray-800 flex flex-col gap-5 ml-2">
-                    <li><a class="font-semibold hover:text-red-500 transition-colors duration-150" href="#">Home</a></li>
-                    <li><a class="font-semibold hover:text-red-500 transition-colors duration-150" href="#">News</a></li>
-                    <li><a class="font-semibold hover:text-red-500 transition-colors duration-150" href="#">Popular</a></li>
-                    <li><a class="font-semibold hover:text-red-500 transition-colors duration-150" href="#">Trending</a></li>
-                    <li><a class="font-semibold hover:text-red-500 transition-colors duration-150" href="#">Categories</a></li>
+            <nav>
+                <ul class="hidden sm:flex  gap-4  text-gray-800">
+                    <li><a class="hover:text-red-500 transition-colors duration-150" href="#">Home</a></li>
+                    <li><a class="hover:text-red-500 transition-colors duration-150" href="#">News</a></li>
+                    <li><a class="hover:text-red-500 transition-colors duration-150" href="#">Popular</a></li>
+                    <li><a class="hover:text-red-500 transition-colors duration-150" href="#">Trending</a></li>
+                    <li><a class="hover:text-red-500 transition-colors duration-150" href="#">Categories</a></li>
                 </ul>
+                <div class="sm:hidden">
+                    <img id="menu-button" src="images/icon-menu.svg" alt="menu">
+                </div>
+
+                <div id="menu" class="bg-white absolute right-0 top-0 hidden h-full w-72">
+                    <div class="flex flex-row justify-end p-4">
+                        <img class="mb-20" id="close-button" src="images/icon-menu-close.svg" alt="close">
+                    </div>
+                    <ul class="text-gray-800 flex flex-col gap-5 ml-2">
+                        <li><a class="font-semibold hover:text-red-500 transition-colors duration-150" href="#">Home</a>
+                        </li>
+                        <li><a class="font-semibold hover:text-red-500 transition-colors duration-150" href="#">News</a>
+                        </li>
+                        <li><a class="font-semibold hover:text-red-500 transition-colors duration-150"
+                                href="#">Popular</a></li>
+                        <li><a class="font-semibold hover:text-red-500 transition-colors duration-150"
+                                href="#">Trending</a>
+                        </li>
+                        <li><a class="font-semibold hover:text-red-500 transition-colors duration-150"
+                                href="#">Categories</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class=" w-full lg:grid lg:grid-cols-3 lg:gap-12 ">
+            <div class="lg:col-span-2">
+                <div class="w-full overflow-hidden h-[310px] mb-5">
+                    <img class="w-full" src="images/image-web-3-mobile.jpg" alt="image-web-3-mobile">
+                </div>
+                <div class="mb-6 sm:flex sm:flex-row">
+                    <div class="sm:w-1/2">
+                        <h2 class="font-bold text-5xl mb-3">The Bright <br> Future of Web 3.0?</h2>
+                    </div>
+                    <div class="sm:w-1/2">
+                        <p class="text-gray-600 font-medium mb-10">We dive into the next evolution of the web that
+                            claims to put the power of the platform back into the hands of the people. But is it really
+                            fulfilling its promise?</p>
+                        <a class="bg-[#ea5858] px-7 py-2 text-[#03042e] hover:bg-[#03042e] hover:text-white font-bold tracking-widest transition-colors duration-150"
+                            href="#">READ MORE</a>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
-    <section class="sm:w-2/3">
-        <div class="w-full overflow-hidden h-[310px] mb-5">
-            <img class="w-full" src="images/image-web-3-mobile.jpg" alt="image-web-3-mobile">
-        </div>
-        <div class="mb-6 sm:flex sm:flex-row">
-            <div class="sm:w-1/2">
-                <h2 class="font-bold text-5xl mb-3">The Bright <br> Future of Web 3.0?</h2>
+
+            <div class="lg:col-span-1 bg-slate-950 w-full  p-3 ">
+                <h1 class=" font-bold text-yellow-500 text-xl ">NEW</h1>
+                <div class="grid divide-y divide-slate-600">
+                    <div class="mt-5">
+                        <h2 class="text-white font-bold">Hydrogen vs electric cars</h2>
+                        <p class="text-gray-400">Will hydrogen fuel cell cars ever catch up to EVs?</p>
+
+
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="text-white font-bold">The downsides of AI Artistry</h2>
+                        <p class="text-gray-400">what are the possible adverse effect of on demand AI image generation?
+                        </p>
+
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="text-white font-bold"> Is VC Funding Drying up?</h2>
+                        <p class="text-gray-400">Private funding by vc firms is down 50% YOY. we take a look at what
+                            that means.</p>
+
+                    </div>
+                </div>
             </div>
-            <div class="sm:w-1/2">
-                <p class="text-gray-600 font-medium mb-10">We dive into the next evolution of the web that claims to put the power of the platform back into the hands of the people. But is it really fulfilling its promise?</p>
-                <a class="bg-[#ea5858] px-7 py-2 text-[#03042e] hover:bg-[#03042e] hover:text-white font-bold tracking-widest transition-colors duration-150" href="#">READ MORE</a>
+        </section>
+
+        <section class=" mt-16 grid md:grid-cols-2 xl:grid-cols-3">
+            <div class="flex">
+                <img src="images/image-retro-pcs.jpg" alt="retro" class="w-36 h-36 mt-5 ml-4">
+                <div class=" ml-5">
+                    <h2 class="text-red-500 mt-3 text-xl">01</h2>
+                    <h3 class="font-bold mt-3">Reviving Retro PCs</h3>
+                    <p class="text-gray-600 mt-3">what happens when old pcs are given modern upgrades?</p>
+                </div>
             </div>
-        </div>
-    </section>
-       <section class="bg-slate-950 w-80  ml-4 p-3 ">
-    
-            <h1 class=" font-bold text-yellow-500 text-xl ">NEW</h1>
-            <div class="grid divide-y divide-slate-600">
-        <div class="mt-5" >
-            <h2 class="text-white font-bold">Hydrogen vs electric cars</h2>
-            <p class="text-gray-400">Will hydrogen fuel cell cars ever catch up to EVs?</p>
-           
 
-        </div>
-        <div class="mt-5">
-            <h2 class="text-white font-bold">The downsides of AI Artistry</h2>
-            <p class="text-gray-400">what are the possible adverse effect of on demand AI image generation?</p>
+            <div class="flex">
+                <img src="images/image-top-laptops.jpg" alt="laptops" class="w-36 h-36 mt-5 ml-4">
+                <div class=" ml-5">
+                    <h2 class="text-red-500 mt-3 text-xl">02</h2>
+                    <h3 class="font-bold mt-3">Top 10 laptops 2022</h3>
+                    <p class="text-gray-600 mt-3">Our best picks for various needs and budgets</p>
+                </div>
+            </div>
+            <div class="flex">
 
-        </div>
-        <div class="mt-5">
-            <h2 class="text-white font-bold"> Is VC Funding Drying up?</h2>
-            <p class="text-gray-400">Private funding by vc firms is down 50% YOY. we take a look at what that means.</p>
-
-        </div>
-    </div>
-    </section>
-<section class="grid md:grid-cols-2 xl:grid-cols-3">
-    <div  class="flex">
-        <img src="/images/image-retro-pcs.jpg" alt="retro"class="w-36 h-36 mt-5 ml-4">
-    <div class=" ml-5">
-        <h2 class="text-red-500 mt-3 text-xl">01</h2>
-        <h3 class="font-bold mt-3">Reviving Retro PCs</h3>
-        <p class="text-gray-600 mt-3">what happens when old pcs are given modern upgrades?</p>
-       </div>
-    </div>
-    
-        <div  class="flex">
-        <img src="/images/image-top-laptops.jpg" alt="laptops"class="w-36 h-36 mt-5 ml-4">
-       <div class=" ml-5">
-        <h2 class="text-red-500 mt-3 text-xl">02</h2>
-        <h3 class="font-bold mt-3">Top 10 laptops 2022</h3>
-        <p class="text-gray-600 mt-3">Our best picks for various needs and budgets</p>
-    </div>
-    </div>
-    <div class="flex">
-        
-        <img src="/images/image-gaming-growth.jpg" alt="gaming"class="w-36 h-36 mt-5 ml-4">
-        <div class=" ml-5">
-        <h2 class="text-red-500 mt-3 text-xl">03</h2>
-        <h3 class="font-bold mt-3">The growth of gaming</h3>
-        <p class="text-gray-600 mt-3">How the pandemic has sparked fresh opportunities.</p>
-    </div>
-    </div>
+                <img src="images/image-gaming-growth.jpg" alt="gaming" class="w-36 h-36 mt-5 ml-4">
+                <div class=" ml-5">
+                    <h2 class="text-red-500 mt-3 text-xl">03</h2>
+                    <h3 class="font-bold mt-3">The growth of gaming</h3>
+                    <p class="text-gray-600 mt-3">How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </div>
 
 
 
-    </section>
+        </section>
     </main>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const menuButton = document.getElementById("menu-button");
-    const closeButton = document.getElementById("close-button");
-    const menu = document.getElementById("menu");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.getElementById("menu-button");
+            const closeButton = document.getElementById("close-button");
+            const menu = document.getElementById("menu");
 
-    menuButton.addEventListener("click", function () {
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "block";
-        }
-    });
+            menuButton.addEventListener("click", function () {
+                if (menu.style.display === "block") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "block";
+                }
+            });
 
-    closeButton.addEventListener("click", function () {
-        menu.style.display = "none";
-    });
-});
+            closeButton.addEventListener("click", function () {
+                menu.style.display = "none";
+            });
+        });
 
-</script>
+    </script>
 </body>
+
 </html>
